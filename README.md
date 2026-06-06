@@ -2,6 +2,10 @@
 
 A practical collection of agentic practices and workflows, including reusable skills, commands, reference notes, and base knowledge documents.
 
+## Quick Start
+
+The fastest way to feel the difference: grab the `apw-implement` skill from this repo and start using it instead of just saying "implement X" to the agent. It takes 3 minutes to set up, but the change in output quality is enormous.
+
 ## Skills
 
 The skills live in [`.claude/skills/`](.claude/skills/) and are invoked from Claude Code by name. Each one turns a tempting shortcut into a small, repeatable discipline. A deeper write-up of *why* each skill matters — the bad practice it prevents and worked examples — lives in [`docs/rationale/`](docs/rationale/index.md).
