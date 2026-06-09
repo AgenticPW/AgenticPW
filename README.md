@@ -18,10 +18,10 @@ Most "awesome agent" repos are grab-bags of prompts and tips that assume the age
 | Finite context & drifting attention | Builds on a wrong mental model of the code | **apw-implement** — familiarize before editing |
 | Knowledge frozen at a training cutoff | Reports stale or guessed facts as truth | **apw-research** — referenced, verified evidence |
 | No knowledge of your project's rules | Inconsistent commits, broken conventions | **apw-commit** — encodes your commit schema |
-| No memory across sessions | Repeats past mistakes; lessons learned evaporate when the context window resets | **apw-learn** — distill durable lessons into project memory *(planned)* |
+| No memory across sessions | Repeats past mistakes; lessons learned evaporate when the context window resets | **apw-learn** — distill durable lessons into project memory |
 | Helpfulness bias toward over-delivering | Silently expands scope, gold-plates, and does unrequested work | **apw-scope-guard** — do exactly what's asked, flag the rest *(planned)*  |
 
-The last two are limitations AgenticPW now recognizes but doesn't yet cover — the skills that compensate for them are on the roadmap.
+The last one is a limitation AgenticPW now recognizes but doesn't yet cover — the skill that compensates for it is on the roadmap.
 
 ## Quick Start
 
@@ -54,6 +54,12 @@ The skills live in [`.claude/skills/`](.claude/skills/) and are invoked from Cla
 **How it helps** — A guided commit workflow. It inspects the pending diff, drafts a message against a project commit schema (`.claude/skills/apw-commit/COMMIT_SCHEMA.md`), and shows you exactly what will be staged before anything happens. Nothing is committed or pushed without explicit confirmation. The payoff is a consistent, searchable git history and no accidental commits of unrelated files.
 
 **How to use it** — Run `/apw-commit` (optionally with a hint like `/apw-commit "fix for issue #42"`). The skill drafts a message from your diff, shows the files it will stage, and asks **"Commit these changes? Also push to remote?"** before doing anything. On first use without a schema, it offers a sensible default and saves your choice for next time.
+
+### apw-learn
+
+**How it helps** — A workflow for giving the project a memory. An agent forgets everything between sessions, so conventions it discovered, mistakes you corrected, and preferences you stated all evaporate when the context window resets — and the next session re-learns them the hard way. This skill distills those lessons into `AGENTS.md`, the always-on file every future session reads. It works from three sources: an *existing conversation* it mines for durable rules, *input you provide* in a fresh chat, or *something it figured out on its own* mid-task. Crucially, it never writes silently: it proposes the exact text and section, explains why each rule earns its place, and edits the file **only after you confirm** — which both keeps `AGENTS.md` a curated set of real rules instead of a junk drawer, and makes the skill safe to let the agent invoke by itself.
+
+**How to use it** — Run `/apw-learn` inside a chat to mine it for lessons, or `/apw-learn "<rule to record>"` in a fresh chat to record one directly. The agent may also reach for it on its own when it learns something worth keeping. Either way it walks through determine source → gather candidates → check `AGENTS.md` → propose → confirm → apply, and asks before writing anything.
 
 ---
 

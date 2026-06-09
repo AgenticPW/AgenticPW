@@ -20,6 +20,10 @@ Familiarize, ask, plan, confirm, implement, summarize — so you stop coding the
 
 Draft from the diff against a project schema, review before staging, and keep history readable.
 
+### [`/apw-learn`](apw-learn.md) — Durable project memory
+
+Distill a lesson — from the conversation, from user input, or from something you figured out — into `AGENTS.md`, but only after the user confirms, so the project stops re-learning the same things every session.
+
 ---
 
 Part of [AgenticPW](../../README.md) — a practical collection of agentic practices and workflows.
