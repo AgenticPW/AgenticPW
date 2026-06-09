@@ -4,6 +4,10 @@ Each skill in this collection replaces a tempting shortcut with a small, repeata
 
 ## Skills
 
+### [`/apw-brainstorm`](apw-brainstorm.md) — Structured ideation
+
+Re-frame the problem, diverge under multiple lenses, push past the safe first cluster, then converge to a ranked shortlist — so brainstorming beats the model's mode collapse instead of surrendering to it.
+
 ### [`/apw-research`](apw-research.md) — Structured research
 
 Frame the question, gather referenced evidence, verify it, and record a recommendation — so research is trustworthy and never redone.
