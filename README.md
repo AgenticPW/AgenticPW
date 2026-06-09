@@ -19,6 +19,7 @@ Most "awesome agent" repos are grab-bags of prompts and tips that assume the age
 | Knowledge frozen at a training cutoff | Reports stale or guessed facts as truth | **apw-research** — referenced, verified evidence |
 | No knowledge of your project's rules | Inconsistent commits, broken conventions | **apw-commit** — encodes your commit schema |
 | No memory across sessions | Repeats past mistakes; lessons learned evaporate when the context window resets | **apw-learn** — distill durable lessons into project memory |
+| Declares success on unverified work | Reports "done" from code that *looks* right, never proven | **apw-verify** — check against requirements, record the evidence |
 | Helpfulness bias toward over-delivering | Silently expands scope, gold-plates, and does unrequested work | **apw-scope-guard** — do exactly what's asked, flag the rest *(planned)*  |
 
 The last one is a limitation AgenticPW now recognizes but doesn't yet cover — the skill that compensates for it is on the roadmap.
@@ -48,6 +49,12 @@ The skills live in [`.claude/skills/`](.claude/skills/) and are invoked from Cla
 **How it helps** — A structured implementation workflow. Instead of jumping straight to edits, it forces you to *familiarize first*, surface genuine ambiguity as questions, agree on a mini plan, and only then implement. Conflicts discovered mid-implementation are raised rather than worked around, and the final summary names tradeoffs and gaps instead of presenting a clean picture. The result is fewer wrong-direction rewrites and fewer surprises at review time.
 
 **How to use it** — Run `/apw-implement "<describe the feature or fix>"`. The skill walks through familiarize → ask → plan → confirm → implement → summarize, and waits for your **"Ready to proceed?"** confirmation before writing any code.
+
+### apw-verify
+
+**How it helps** — A structured verification workflow and the downstream counterpart to `apw-implement`. Left alone, an agent tends to declare work "done" because the code *looks* right — reporting success it never actually proved. This skill replaces "it should work" with evidence: it reads the requirements (a description or a referenced spec/plan), turns them into a concrete checklist where each item is a single checkable claim, then verifies each one against reality — running it, testing it, or reading the actual implementation rather than assuming. Every requirement gets an honest verdict (`pass` / `fail` / `partial` / `unable-to-verify`) backed by evidence, conflicts between the implementation and the spec are surfaced instead of papered over, and the full result — including what *couldn't* be verified and why — is written to a durable artifact. The result is a trustworthy answer to "is this actually done?" instead of an optimistic guess.
+
+**How to use it** — Run `/apw-verify "<what to verify, or a path to the spec/plan/requirements>"`. The skill walks through establish target → ask → plan → confirm → verify → surface conflicts → record → summarize, waits for your **"Ready to proceed?"** before spending time, and writes the result to `docs/<task-short-slug>/verification-result.md` using the template at `.claude/skills/apw-verify/VERIFICATION_TEMPLATE.md`.
 
 ### apw-commit
 

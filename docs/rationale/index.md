@@ -16,6 +16,10 @@ Frame the question, gather referenced evidence, verify it, and record a recommen
 
 Familiarize, ask, plan, confirm, implement, summarize — so you stop coding the wrong thing.
 
+### [`/apw-verify`](apw-verify.md) — Structured verification
+
+Establish a checkable target from the requirements, verify each item against reality with evidence, and record an honest verdict — so "done" is proven, not assumed.
+
 ### [`/apw-commit`](apw-commit.md) — Guided commits
 
 Draft from the diff against a project schema, review before staging, and keep history readable.
