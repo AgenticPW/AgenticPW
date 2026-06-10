@@ -21,9 +21,6 @@ Most "awesome agent" repos are grab-bags of prompts and tips that assume the age
 | No memory across sessions | Repeats past mistakes; lessons learned evaporate when the context window resets | **apw-learn** — distill durable lessons into project memory |
 | Declares success on unverified work | Reports "done" from code that *looks* right, never proven | **apw-verify** — check against requirements, record the evidence |
 | Bias toward its own output | Reviews its own work to confirm it, not to break it — and approves the flaw it just authored | **apw-review** — switch from author to critic, attack the work, record the verdict |
-| Helpfulness bias toward over-delivering | Silently expands scope, gold-plates, and does unrequested work | **apw-scope-guard** — do exactly what's asked, flag the rest *(planned)*  |
-
-The last one is a limitation AgenticPW now recognizes but doesn't yet cover — the skill that compensates for it is on the roadmap.
 
 ## Quick Start
 
