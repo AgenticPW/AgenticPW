@@ -13,6 +13,8 @@ Before doing anything else, read everything relevant to the task:
 - Existing codebase files related to the area of change
 - API docs, external documentation, or specs if the task touches integrations
 - Any prior work (recent commits, related code) that could affect the approach
+- Any planning artifact for this task — if `docs/<task-short-slug>/plan.md` exists (from `apw-plan`), it is your task list and source of intent; read it, along with any `requirements.md` / `design.md` it references
+- If the task is a fix, any diagnosis artifact — if `docs/<task-short-slug>/root-cause.md` exists (from `apw-find-root-cause`), it names the proven defect the fix must address; read it before deciding the approach
 
 Do not skip this step, even if the task looks simple. The goal is to have a complete picture before forming any opinion.
 
@@ -38,6 +40,8 @@ Wait for the user to confirm or correct the plan before moving to Step 4.
 ## Step 4 — Implement
 
 Proceed with the implementation as agreed. Use the TodoWrite tool (if available) to track each step and mark tasks complete as you finish them — do not batch completions.
+
+If you are working from an `apw-plan` `plan.md`, tick each `- [ ]` box to `- [x]` as you complete that task, so the plan stays a live record of what's done and what's left.
 
 ## Step 5 — Surface conflicts during implementation
 

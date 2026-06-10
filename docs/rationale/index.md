@@ -12,6 +12,14 @@ Re-frame the problem, diverge under multiple lenses, push past the safe first cl
 
 Frame the question, gather referenced evidence, verify it, and record a recommendation — so research is trustworthy and never redone.
 
+### [`/apw-plan`](apw-plan.md) — Structured planning
+
+Absorb the inputs, state your understanding, then produce planning docs at the depth the task warrants — FULL (requirements + design + plan), MEDIUM (design + plan), or PLAN — with every task tracing back to what it implements, so the plan survives the conversation and doesn't drift from intent.
+
+### [`/apw-find-root-cause`](apw-find-root-cause.md) — Structured root-cause diagnosis
+
+Capture the symptom, reproduce it, hold competing hypotheses, then converge on the cause through an iterative evidence loop and prove the causal chain — so the fix targets the underlying defect, not the first plausible story or the symptom one level up.
+
 ### [`/apw-implement`](apw-implement.md) — Structured implementation
 
 Familiarize, ask, plan, confirm, implement, summarize — so you stop coding the wrong thing.

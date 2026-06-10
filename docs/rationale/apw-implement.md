@@ -87,4 +87,4 @@ The "one-line change" touched four files, hit a real constraint, and shipped wit
 
 ---
 
-Part of [AgenticPW](../../README.md) · See also the [apw-commit rationale](apw-commit.md).
+Part of [AgenticPW](../../README.md) · See also the [apw-commit rationale](apw-commit.md). When the task is fixing a bug, diagnose it first with [apw-find-root-cause](apw-find-root-cause.md) — it proves the cause and hands off the defect for this skill to fix.

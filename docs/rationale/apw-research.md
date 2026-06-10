@@ -95,4 +95,4 @@ The "just pick a library" question shipped as a referenced, graded document with
 
 ---
 
-Part of [AgenticPW](../../README.md) · See also the [apw-implement rationale](apw-implement.md) and [apw-commit rationale](apw-commit.md).
+Part of [AgenticPW](../../README.md) · See also the [apw-implement rationale](apw-implement.md) and [apw-commit rationale](apw-commit.md). For diagnosing a *known, observed* defect rather than open-ended investigation, use [apw-find-root-cause](apw-find-root-cause.md) instead.
