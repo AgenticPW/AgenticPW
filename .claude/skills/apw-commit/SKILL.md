@@ -1,6 +1,6 @@
 ---
 description: Analyze pending git changes, draft a commit message using a project schema, and commit/push after user review.
-disable-model-invocation: false
+disable-model-invocation: true
 metadata:
   version: "1.0"
 ---

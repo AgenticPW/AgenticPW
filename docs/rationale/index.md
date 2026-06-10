@@ -20,6 +20,10 @@ Familiarize, ask, plan, confirm, implement, summarize — so you stop coding the
 
 Establish a checkable target from the requirements, verify each item against reality with evidence, and record an honest verdict — so "done" is proven, not assumed.
 
+### [`/apw-review`](apw-review.md) — Adversarial self-review
+
+Switch from author to critic, attack your own diff, plan, or conclusion under explicit lenses, and record an honest verdict — so the flaw you're too close to see gets caught before it ships.
+
 ### [`/apw-commit`](apw-commit.md) — Guided commits
 
 Draft from the diff against a project schema, review before staging, and keep history readable.
