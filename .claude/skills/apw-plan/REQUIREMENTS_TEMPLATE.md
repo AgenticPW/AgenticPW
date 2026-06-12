@@ -1,6 +1,6 @@
 # Requirements Template
 
-Copy this structure into `docs/<task-short-slug>/requirements.md`. Give every
+Copy this structure into your work item's **`requirements.md`** artifact — see `apw-work-with-work-item-artifacts` for where work-item artifacts live. Give every
 requirement a stable ID (R1, R2, …) — the design and plan reference these IDs,
 so they must not change once assigned. State each requirement as a single,
 testable claim: "the system must …", not "it would be nice if …".

@@ -70,7 +70,7 @@ If the evidence contradicts the framing — the core question was wrong, an assu
 1. Organize findings around the original questions from Step 1.
 2. When comparing options, lay them against the done-criteria as a small decision matrix with honest tradeoffs.
 3. End with a **concrete recommendation** and the reasoning behind it. Research that does not converge to a recommendation is not finished.
-4. Write the result to a durable artifact at **`docs/<task-short-slug>/research.md`** in the project root, where `<task-short-slug>` is a short kebab-case name for the task. Use `.claude/skills/apw-research/RESEARCH_TEMPLATE.md` as the structure. The artifact **must include the references collected in Step 4** so any reader can verify every claim without redoing the work. This file is what `apw-implement` Step 1 consumes.
+4. Write the result to your work item's **`research.md`** artifact — see `apw-work-with-work-item-artifacts` for where work-item artifacts live — using `.claude/skills/apw-research/RESEARCH_TEMPLATE.md` as the structure. The artifact **must include the references collected in Step 4** so any reader can verify every claim without redoing the work. This file is what `apw-implement` Step 1 consumes.
 
 ## Step 8 — Honest summary
 

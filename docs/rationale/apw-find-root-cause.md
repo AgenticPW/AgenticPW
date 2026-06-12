@@ -84,7 +84,7 @@ assistant: Root cause (confidence: high): acquireLock() returns null for SKUs
   with no lock row yet, instead of creating/waiting — decrement() then derefs it.
   The 1% are checkouts hitting same-day SKUs.
 
-  Wrote docs/checkout-500/root-cause.md — hypotheses (incl. the pool theory I
+  Wrote docs/work-items/checkout-500/root-cause.md — hypotheses (incl. the pool theory I
   ruled out), the repro, the causal chain, and what the fix must address
   (lock-row lifecycle for new SKUs). Fixing is the next step — hand to
   /apw-implement.

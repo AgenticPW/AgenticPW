@@ -82,7 +82,7 @@ assistant: Verdict: RECONSIDER — the plan's core promise (no staleness)
   doesn't hold under the second writer, which the plan never accounts for.
   Strongest objection: you're solving for latency with an approach whose
   correctness assumes something false about the system.
-  Wrote docs/profile-cache/review.md with findings and the killed objection.
+  Wrote docs/work-items/profile-cache/review.md with findings and the killed objection.
 ```
 
 The plan "looked solid" and would have been committed. Arguing against it surfaced the single false assumption underneath the whole approach — and the review names it plainly instead of nodding the plan through.

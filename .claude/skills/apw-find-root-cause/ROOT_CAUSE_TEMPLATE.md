@@ -1,6 +1,6 @@
 # Root-Cause Template
 
-Copy this structure into `docs/<task-short-slug>/root-cause.md`. This artifact
+Copy this structure into your work item's **`root-cause.md`** artifact — see `apw-work-with-work-item-artifacts` for where work-item artifacts live. This artifact
 proves *what is wrong*, not how to fix it — the fix is handed off to
 `apw-implement` / `apw-plan`. A root cause is only "proven" once its causal chain
 is backed by evidence a reader can follow; otherwise report the best-supported

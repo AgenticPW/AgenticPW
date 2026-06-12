@@ -81,7 +81,7 @@ user: respects filters; single response is fine. MEDIUM.
 ### 3 · Produce each artifact, review, then the next
 
 ```
-assistant: Wrote docs/csv-export/design.md.
+assistant: Wrote docs/work-items/csv-export/design.md.
 D1 reuse the existing report query + a CSV serializer; D2 a new
 GET /reports/export endpoint; UI mockup of the button + its loading state.
 Review it — approve, or tell me what to change?
@@ -90,7 +90,7 @@ user: drop the loading state, it'll be instant. otherwise good.
 assistant: Updated design.md (removed the loading state). Approved?
 user: yes
 
-assistant: Wrote docs/csv-export/plan.md — 6 tasks across 2 phases, each a
+assistant: Wrote docs/work-items/csv-export/plan.md — 6 tasks across 2 phases, each a
 [ ] box tracing back to D1/D2. Review it?
 user: looks right, ship it to implement
 ```

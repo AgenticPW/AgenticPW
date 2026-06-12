@@ -1,6 +1,6 @@
 # Verification Template
 
-Copy this structure into `docs/<task-short-slug>/verification-result.md`. Every
+Copy this structure into your work item's **`verification-result.md`** artifact — see `apw-work-with-work-item-artifacts` for where work-item artifacts live. Every
 `pass` must rest on evidence a reader can follow — a command and its output, a
 test result, a file path with line number, or an observed behavior. A verdict
 with no evidence is a guess, not a verification.

@@ -1,6 +1,6 @@
 # Brainstorm Template
 
-Copy this structure into `docs/<task-short-slug>/brainstorm.md`. Capture the
+Copy this structure into your work item's **`brainstorm.md`** artifact — see `apw-work-with-work-item-artifacts` for where work-item artifacts live. Capture the
 *whole* idea log, not just the winner — the discarded options are the value a
 future reader would otherwise have to regenerate.
 

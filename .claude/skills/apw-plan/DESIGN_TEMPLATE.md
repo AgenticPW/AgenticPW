@@ -1,6 +1,6 @@
 # Design Template
 
-Copy this structure into `docs/<task-short-slug>/design.md`. Give every design
+Copy this structure into your work item's **`design.md`** artifact — see `apw-work-with-work-item-artifacts` for where work-item artifacts live. Give every design
 decision a stable ID (D1, D2, …) so the plan can reference it, and tie each one
 back to the requirement(s) it serves. Design covers **both** the technical
 design (the main tech decisions) and — *only when the task has a user-facing

@@ -13,7 +13,7 @@ Before forming any plan, read everything that defines the task:
 
 - **The brief** — the task description, ticket, or request as given.
 - **Provided material** — any docs, specs, designs, or references handed in with it.
-- **Prior artifacts** — if `docs/<task-short-slug>/research.md` or `brainstorm.md` exist, the plan **builds on them**, it does not redo their work.
+- **Prior artifacts** — if your work item's `research.md` or `brainstorm.md` artifacts exist (see `apw-work-with-work-item-artifacts` for where they live), the plan **builds on them**, it does not redo their work.
 - **The codebase** — the files, modules, and conventions the work will touch, so the plan fits reality instead of an imagined architecture.
 
 Do not skip this step, even if the task looks small. A plan is only as good as the picture behind it.
@@ -34,7 +34,7 @@ Wait for the user's answers **and** their depth choice before producing anything
 
 ## Step 3 — Produce and confirm the artifacts, one at a time
 
-Write to `docs/<task-short-slug>/` in the project root, where `<task-short-slug>` is a short kebab-case name for the task (reuse the slug of any related research/brainstorm so the documents sit together).
+Write the documents (`requirements.md`, `design.md`, `plan.md`) to your work item's artifact folder — see `apw-work-with-work-item-artifacts` for where work-item artifacts live.
 
 **Produce the documents one by one, in dependency order — never all at once.** After writing each artifact, stop: tell the user it's ready (with its path) and a one-to-two-line summary of what it contains, then **wait for their review**. The user either:
 

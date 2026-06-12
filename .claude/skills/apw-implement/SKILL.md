@@ -13,8 +13,8 @@ Before doing anything else, read everything relevant to the task:
 - Existing codebase files related to the area of change
 - API docs, external documentation, or specs if the task touches integrations
 - Any prior work (recent commits, related code) that could affect the approach
-- Any planning artifact for this task — if `docs/<task-short-slug>/plan.md` exists (from `apw-plan`), it is your task list and source of intent; read it, along with any `requirements.md` / `design.md` it references
-- If the task is a fix, any diagnosis artifact — if `docs/<task-short-slug>/root-cause.md` exists (from `apw-find-root-cause`), it names the proven defect the fix must address; read it before deciding the approach
+- Any planning artifact for this task — if your work item's `plan.md` artifact exists (from `apw-plan`; see `apw-work-with-work-item-artifacts` for where it lives), it is your task list and source of intent; read it, along with any `requirements.md` / `design.md` it references
+- If the task is a fix, any diagnosis artifact — if your work item's `root-cause.md` artifact exists (from `apw-find-root-cause`; see `apw-work-with-work-item-artifacts` for where it lives), it names the proven defect the fix must address; read it before deciding the approach
 
 Do not skip this step, even if the task looks simple. The goal is to have a complete picture before forming any opinion.
 

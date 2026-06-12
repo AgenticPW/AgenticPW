@@ -29,7 +29,7 @@ It replaces "go read about it" with eight ordered checkpoints, each catching a c
 4. **Gather evidence.** Every finding carries a **claim + reference + confidence**, with primary sources preferred over secondary.
 5. **Verify, don't trust.** Cross-check key claims, prefer reality over docs, test what's cheap to test, and separate facts from assumptions.
 6. **Surface surprises.** If evidence breaks the framing, stop and re-frame with the user instead of quietly answering a different question.
-7. **Synthesize & record.** Compare options against the criteria, commit to a concrete recommendation, and write it to `docs/<task-short-slug>/research.md`.
+7. **Synthesize & record.** Compare options against the criteria, commit to a concrete recommendation, and write it to your work item's `research.md` artifact (location per [`apw-work-with-work-item-artifacts`](apw-work-with-work-item-artifacts.md)).
 8. **Honest summary.** Report the recommendation, its confidence, what's verified vs assumed, and the open questions the implementation must carry.
 
 > **The core idea:** research is only worth what someone can act on and trust. A finding without a reference is a rumor; a session of investigation without a written artifact is work you'll do twice. This skill front-loads the cheap discipline — a clear question, traceable evidence, a durable doc — so the answer survives the conversation and feeds straight into implementation.
@@ -41,7 +41,7 @@ Two rules make the output trustworthy without re-doing it:
 - **Every claim is referenced.** A file path with line number, a full URL, a commit SHA, or a command and its output — enough that a reader can check it themselves.
 - **Every claim is graded.** `verified` (checked against a primary source or tested), `likely` (one credible source), or `unconfirmed` (assumption or weak source) — so confidence is never overstated.
 
-The artifact lives at `docs/<task-short-slug>/research.md`, structured by [`RESEARCH_TEMPLATE.md`](../../.claude/skills/apw-research/RESEARCH_TEMPLATE.md): Question → Findings → Options & tradeoffs → Recommendation → Open questions → References.
+The artifact is `research.md` (location per [`apw-work-with-work-item-artifacts`](apw-work-with-work-item-artifacts.md)), structured by [`RESEARCH_TEMPLATE.md`](../../.claude/skills/apw-research/RESEARCH_TEMPLATE.md): Question → Findings → Options & tradeoffs → Recommendation → Open questions → References.
 
 ## Sample walkthrough
 
@@ -86,7 +86,7 @@ assistant: Findings (each referenced):
 assistant: Recommendation: pg-boss — meets all criteria with zero new
 infrastructure. BullMQ is more powerful but needs Redis (fails the criteria).
 
-Wrote docs/scheduled-emails/research.md (findings, matrix, references).
+Wrote docs/work-items/scheduled-emails/research.md (findings, matrix, references).
 Confidence: high on infra fit; open question: pg-boss throughput at our
 volume is unconfirmed — flag a load test before relying on it.
 ```

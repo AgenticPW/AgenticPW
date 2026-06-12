@@ -62,7 +62,7 @@ Then **kill the ones that don't hold up.** Manufacturing fake problems to look r
 
 ## Step 7 — Record the review artifact
 
-Write the outcome to a durable artifact at **`docs/<task-short-slug>/review.md`** in the project root, where `<task-short-slug>` is a short kebab-case name for the work being reviewed (reuse the slug of any related plan, research, or implementation so the review sits alongside it). Use `.claude/skills/apw-review/REVIEW_TEMPLATE.md` as the structure. The artifact must contain:
+Write the outcome to your work item's **`review.md`** artifact — see `apw-work-with-work-item-artifacts` for where work-item artifacts live — using `.claude/skills/apw-review/REVIEW_TEMPLATE.md` as the structure. The artifact must contain:
 
 - The **review target and central claim**.
 - The **surviving findings** with severity, confidence, and the specific location/claim each attacks.

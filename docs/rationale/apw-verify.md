@@ -39,7 +39,7 @@ A developer asks to confirm a finished feature actually meets its spec. Watch ho
 ### 1 · The request
 
 ```
-user: /apw-verify "docs/rate-limit/spec.md — verify the rate limiter is done"
+user: /apw-verify "docs/work-items/rate-limit/spec.md — verify the rate limiter is done"
 ```
 
 ### 2 · Establish the target, plan, confirm
@@ -76,7 +76,7 @@ assistant: Results:
 assistant: Verdict: PARTIAL — 2 pass, 1 fail, 1 partial.
   Critical: requirement 2 (per-key limiting) is not met — it's
   per-IP, which is a different and weaker guarantee.
-  Wrote docs/rate-limit/verification-result.md with evidence and the
+  Wrote docs/work-items/rate-limit/verification-result.md with evidence and the
   one item I couldn't verify (exact reset timing).
 ```
 

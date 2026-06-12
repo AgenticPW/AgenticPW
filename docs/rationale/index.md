@@ -40,6 +40,10 @@ Draft from the diff against a project schema, review before staging, and keep hi
 
 Distill a lesson — from the conversation, from user input, or from something you figured out — into `AGENTS.md`, but only after the user confirms, so the project stops re-learning the same things every session.
 
+### [`apw-work-with-work-item-artifacts`](apw-work-with-work-item-artifacts.md) — Where artifacts live
+
+A reference skill, not a workflow: the single source of truth for where a work item's artifacts live (`docs/work-items/<slug>/`), so the convention is defined once and every other skill points at it instead of restating the path.
+
 ---
 
 Part of [AgenticPW](../../README.md) — a practical collection of agentic practices and workflows.

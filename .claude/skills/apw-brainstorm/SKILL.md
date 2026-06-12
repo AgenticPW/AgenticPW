@@ -68,7 +68,7 @@ If the ideation reveals that the real problem is different from the framing — 
 
 1. Converge to a **ranked shortlist** or a single **recommendation** with the reasoning behind it. Thirty ideas and no direction is not a finished brainstorm.
 2. Say what each shortlisted idea would need *next* — typically a hand-off to `apw-research` to verify feasibility, or straight to `apw-implement` if the path is clear.
-3. Write the result to a durable artifact at **`docs/<task-short-slug>/brainstorm.md`** in the project root, where `<task-short-slug>` is a short kebab-case name for the challenge. Use `.claude/skills/apw-brainstorm/BRAINSTORM_TEMPLATE.md` as the structure. Capturing the idea log (not just the winner) means the discarded options can be revisited instead of regenerated.
+3. Write the result to your work item's **`brainstorm.md`** artifact — see `apw-work-with-work-item-artifacts` for where work-item artifacts live — using `.claude/skills/apw-brainstorm/BRAINSTORM_TEMPLATE.md` as the structure. Capturing the idea log (not just the winner) means the discarded options can be revisited instead of regenerated.
 
 This artifact is the **single detailed record** — the full idea log, clusters, matrix, shortlist, and open questions live here. The chat (Step 8) gets a concise summary that points to it, never a second copy of the same content.
 

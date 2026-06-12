@@ -1,6 +1,6 @@
 # Research Template
 
-Copy this structure into `docs/<task-short-slug>/research.md`. Every claim must
+Copy this structure into your work item's **`research.md`** artifact — see `apw-work-with-work-item-artifacts` for where work-item artifacts live. Every claim must
 carry a reference a reader can follow to verify it independently — a file path
 with line number, a full URL, a commit SHA, or a command and its output.
 

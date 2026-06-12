@@ -77,7 +77,7 @@ Let the user decide how to proceed. A confident answer to the wrong question is 
 
 ## Step 7 — Record the artifact
 
-Write the diagnosis to a durable artifact at **`docs/<task-short-slug>/root-cause.md`** in the project root, where `<task-short-slug>` is a short kebab-case name for the task (reuse the slug of the issue, so the diagnosis sits alongside any related research, plan, or eventual fix). Use `.claude/skills/apw-find-root-cause/ROOT_CAUSE_TEMPLATE.md` as the structure. The artifact must contain:
+Write the diagnosis to your work item's **`root-cause.md`** artifact — see `apw-work-with-work-item-artifacts` for where work-item artifacts live — using `.claude/skills/apw-find-root-cause/ROOT_CAUSE_TEMPLATE.md` as the structure. The artifact must contain:
 
 - The **symptom** and the **reproduction** (or why it couldn't be reproduced).
 - The **hypotheses considered** — including the rejected ones and *why* each was ruled out.

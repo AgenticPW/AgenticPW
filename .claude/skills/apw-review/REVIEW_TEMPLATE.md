@@ -1,6 +1,6 @@
 # Review Template
 
-Copy this structure into `docs/<task-short-slug>/review.md`. This is an
+Copy this structure into your work item's **`review.md`** artifact — see `apw-work-with-work-item-artifacts` for where work-item artifacts live. This is an
 *adversarial self-review*: the job is to find what is wrong with your own work,
 not to confirm it. Every finding must name a specific location or claim and why
 it is a problem — a vague worry is not a finding. Record the review even when the

@@ -1,6 +1,6 @@
 # Plan Template
 
-Copy this structure into `docs/<task-short-slug>/plan.md`. Every sub-task is a
+Copy this structure into your work item's **`plan.md`** artifact — see `apw-work-with-work-item-artifacts` for where work-item artifacts live. Every sub-task is a
 `- [ ]` checkbox left **unchecked** — the implementing agent ticks it (`- [x]`)
 as the task is completed, so the plan tracks real progress. In FULL/MEDIUM
 depth, each task names the requirement/design IDs it implements, so the plan

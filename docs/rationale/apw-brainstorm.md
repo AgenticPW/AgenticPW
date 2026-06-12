@@ -30,7 +30,7 @@ It replaces "list some ideas" with eight ordered steps that first force genuine 
 4. **Push past the first cluster.** A named checkpoint: notice when every idea is a variation on the safe default, and force several that are contrarian or break an assumed constraint.
 5. **Converge.** Cluster into themes, score the strongest against the criteria, and **kill weak ideas explicitly** instead of flattering all of them.
 6. **Surface surprises.** If the real problem turns out to be different, stop and re-frame rather than finishing the wrong brainstorm.
-7. **Recommend & record.** Converge to a ranked shortlist, say what each option needs next, and write the full idea log to `docs/<task-short-slug>/brainstorm.md`.
+7. **Recommend & record.** Converge to a ranked shortlist, say what each option needs next, and write the full idea log to your work item's `brainstorm.md` artifact (location per [`apw-work-with-work-item-artifacts`](apw-work-with-work-item-artifacts.md)).
 8. **Honest summary.** Report the shortlist, what was killed, which assumptions fell, and what each survivor needs next.
 
 > **The core idea:** a model's default is to give you its *average* answer, confidently. Brainstorming is the one task where the average answer is exactly the wrong one. This skill spends cheap structure — re-framings, forced lenses, a quantity target, a "push past the obvious" gate — to pull the output away from the high-probability center, and only then turns on judgment to narrow it back down.
@@ -43,7 +43,7 @@ Three mechanisms make this skill different from a generic "brainstorm 10 ideas" 
 - **The "push past the first cluster" gate** (Step 4) treats the first batch as the *starting* point, not the answer — and demands ideas that break a stated assumption.
 - **Optional parallel agents** (Step 2) generate genuinely decorrelated ideas, the strongest structural defense against everything collapsing onto one answer.
 
-The artifact lives at `docs/<task-short-slug>/brainstorm.md`, structured by [`BRAINSTORM_TEMPLATE.md`](../../.claude/skills/apw-brainstorm/BRAINSTORM_TEMPLATE.md): Challenge & re-framings → Idea log by lens → Clusters → Evaluation → Shortlist → Open questions. It keeps the *discarded* ideas too, so they can be revisited instead of regenerated.
+The artifact is `brainstorm.md` (location per [`apw-work-with-work-item-artifacts`](apw-work-with-work-item-artifacts.md)), structured by [`BRAINSTORM_TEMPLATE.md`](../../.claude/skills/apw-brainstorm/BRAINSTORM_TEMPLATE.md): Challenge & re-framings → Idea log by lens → Clusters → Evaluation → Shortlist → Open questions. It keeps the *discarded* ideas too, so they can be revisited instead of regenerated.
 
 ## Sample walkthrough
 
@@ -91,7 +91,7 @@ assistant: Shortlist vs. criteria:
   2. Pre-fill from signup — cheap, smaller lift, ship now.
 Killed: "add a progress bar" (cosmetic, doesn't address why people leave).
 
-Wrote docs/onboarding-dropoff/brainstorm.md (full idea log + matrix).
+Wrote docs/work-items/onboarding-dropoff/brainstorm.md (full idea log + matrix).
 Next: hand #1 to /apw-research to size the build; #2 is ready for
 /apw-implement.
 ```

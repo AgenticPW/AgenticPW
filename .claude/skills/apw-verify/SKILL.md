@@ -55,7 +55,7 @@ Do not silently mark such things as pass, and do not silently fix them — verif
 
 ## Step 6 — Record the result artifact
 
-Write the outcome to a durable artifact at **`docs/<task-short-slug>/verification-result.md`** in the project root, where `<task-short-slug>` is a short kebab-case name for the task (reuse the slug of the work being verified, so the result sits alongside any related research or plan). Use `.claude/skills/apw-verify/VERIFICATION_TEMPLATE.md` as the structure. The artifact must contain:
+Write the outcome to your work item's **`verification-result.md`** artifact — see `apw-work-with-work-item-artifacts` for where work-item artifacts live — using `.claude/skills/apw-verify/VERIFICATION_TEMPLATE.md` as the structure. The artifact must contain:
 
 - The **per-requirement verdicts** with their evidence.
 - **Failures and gaps** — what does not meet the requirements.
