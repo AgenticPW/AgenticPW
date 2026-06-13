@@ -36,6 +36,10 @@ Switch from author to critic, attack your own diff, plan, or conclusion under ex
 
 Draft from the diff against a project schema, review before staging, and keep history readable.
 
+### [`/apw-onboard`](apw-onboard.md) — Codebase orientation
+
+Survey the codebase once into a `Codebase Orientation` section of `AGENTS.md` — architecture, entry points, build/test/run commands, conventions — and orient from it in later sessions by verifying it against reality before trusting it, so sessions stop re-deriving the codebase from scratch and a stale map gets caught instead of believed. User-invoked only.
+
 ### [`/apw-handoff`](apw-handoff.md) — Session continuity
 
 Checkpoint a task's in-flight state — done/next, decisions with their why, dead ends — into the work item's `handoff.md`, then resume in a fresh session by verifying that snapshot against reality before continuing — so a context reset costs minutes, not the re-derivation of a whole session.

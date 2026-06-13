@@ -40,6 +40,7 @@ The skills live in [`.claude/skills/`](.claude/skills/) and are invoked from Cla
 - **[apw-brainstorm](docs/rationale/apw-brainstorm.md)** — Re-frame the problem, diverge under multiple lenses, push past the safe first cluster, then converge to a ranked shortlist.
 - **[apw-find-root-cause](docs/rationale/apw-find-root-cause.md)** — Capture the symptom, reproduce it, hold competing hypotheses, then prove the causal chain to the underlying defect before any fix.
 - **[apw-commit](docs/rationale/apw-commit.md)** — Draft a commit message from the diff against a project schema and show what will be staged before anything happens.
+- **[apw-onboard](docs/rationale/apw-onboard.md)** — Survey the codebase once into an `AGENTS.md` orientation section — architecture, entry points, build/test/run, conventions — and orient from it later by verifying it against reality first, so sessions stop re-deriving the codebase and a stale map gets caught, not believed.
 - **[apw-handoff](docs/rationale/apw-handoff.md)** — Checkpoint a task's in-flight state (done/next, decisions, dead-ends) to the work item, and resume from it in a fresh session after verifying it against reality.
 - **[apw-learn](docs/rationale/apw-learn.md)** — Distill a durable lesson into `AGENTS.md` — but only after you confirm — so the project stops re-learning the same things every session.
 - **[apw-work-with-work-item-artifacts](docs/rationale/apw-work-with-work-item-artifacts.md)** — A reference skill, not a workflow: the single source of truth for where a work item's artifacts live.
