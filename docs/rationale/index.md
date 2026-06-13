@@ -24,6 +24,10 @@ Capture the symptom, reproduce it, hold competing hypotheses, then converge on t
 
 Familiarize, ask, plan, confirm, implement, summarize — so you stop coding the wrong thing.
 
+### [`/apw-write-test`](apw-write-test.md) — Structured test-writing
+
+Establish the contract, derive expected behavior from the spec *before* reading the implementation, confirm the case list, write, then prove every test can fail before trusting its green — so the suite catches a wrong implementation instead of mirroring it. Works the same in TDD and post-hoc modes.
+
 ### [`/apw-verify`](apw-verify.md) — Structured verification
 
 Establish a checkable target from the requirements, verify each item against reality with evidence, and record an honest verdict — so "done" is proven, not assumed.

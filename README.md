@@ -17,6 +17,7 @@ Most "awesome agent" repos are grab-bags of prompts and tips that assume the age
 | Loses the thread on multi-step work | Starts coding before the work is broken down; steps get skipped and the plan drifts from the original ask |
 | Finite context & drifting attention | Builds on a wrong mental model of the code |
 | Knowledge frozen at a training cutoff | Reports stale or guessed facts as truth |
+| Writes tests that confirm the code, not the spec | Reverse-engineers assertions from the implementation — green coverage that passes by construction, never seen to fail, and locks in whatever bug the code already has |
 | Declares success on unverified work | Reports "done" from code that *looks* right, never proven |
 | Bias toward its own output | Reviews its own work to confirm it, not to break it — and approves the flaw it just authored |
 | Mode collapse toward the average answer | "Brainstorming" yields a few generic, near-identical ideas |
@@ -34,6 +35,7 @@ The skills live in [`.claude/skills/`](.claude/skills/) and are invoked from Cla
 
 - **[apw-plan](docs/rationale/apw-plan.md)** — Turn a fuzzy brief into durable planning docs at the depth the task warrants, with every task tracing back to what it implements.
 - **[apw-implement](docs/rationale/apw-implement.md)** — Familiarize, ask, agree a mini plan, then implement — surfacing conflicts and naming tradeoffs instead of coding the wrong thing.
+- **[apw-write-test](docs/rationale/apw-write-test.md)** — Derive expected behavior from the spec before reading the code, then trust no test until it's been seen to fail — so the suite catches a broken implementation instead of mirroring it.
 - **[apw-research](docs/rationale/apw-research.md)** — Frame the question, gather referenced evidence, verify it, and record a recommendation that feeds straight into implementation.
 - **[apw-verify](docs/rationale/apw-verify.md)** — Turn requirements into a checklist and verify each item against reality with evidence, so "done" is proven, not assumed.
 - **[apw-review](docs/rationale/apw-review.md)** — Switch from author to critic and attack your own diff, plan, or conclusion under explicit lenses, so the flaw you're too close to see gets caught before it ships.
