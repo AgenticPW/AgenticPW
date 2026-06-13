@@ -36,6 +36,10 @@ Switch from author to critic, attack your own diff, plan, or conclusion under ex
 
 Draft from the diff against a project schema, review before staging, and keep history readable.
 
+### [`/apw-handoff`](apw-handoff.md) — Session continuity
+
+Checkpoint a task's in-flight state — done/next, decisions with their why, dead ends — into the work item's `handoff.md`, then resume in a fresh session by verifying that snapshot against reality before continuing — so a context reset costs minutes, not the re-derivation of a whole session.
+
 ### [`/apw-learn`](apw-learn.md) — Durable project memory
 
 Distill a lesson — from the conversation, from user input, or from something you figured out — into `AGENTS.md`, but only after the user confirms, so the project stops re-learning the same things every session.
