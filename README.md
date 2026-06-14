@@ -22,6 +22,7 @@ Most "awesome agent" repos are grab-bags of prompts and tips that assume the age
 | Bias toward its own output | Reviews its own work to confirm it, not to break it — and approves the flaw it just authored |
 | Mode collapse toward the average answer | "Brainstorming" yields a few generic, near-identical ideas |
 | Commits to the first viable technical approach | Picks the obvious solution without presenting options — user never weighs in on technical direction before implementation begins |
+| Commits to the wrong workflow upfront | Jumps straight to implementation when the approach is unclear, or runs the full research→design→plan stack when a simple implement would do — wasting effort in both directions |
 | Commits to the first plausible cause of a failure | Patches the symptom / commits to the first plausible cause without proving it, so the fix resurfaces or hides an unproven defect |
 | No knowledge of your project's rules | Inconsistent commits, broken conventions |
 | No memory across sessions | Repeats past mistakes; lessons learned evaporate when the context window resets |
@@ -34,6 +35,7 @@ The fastest way to feel the difference: grab the `apw-implement` skill from this
 
 The skills live in [`.claude/skills/`](.claude/skills/) and are invoked from Claude Code by name. Each one turns a tempting shortcut into a small, repeatable discipline. A deeper write-up of *why* each skill matters — the bad practice it prevents and worked examples — lives in [`docs/rationale/`](docs/rationale/index.md).
 
+- **[apw-decompose](docs/rationale/apw-decompose.md)** — Map a task to the minimal ordered sequence of skills actually needed: absorb the task, self-assess what's known and unknown, propose the workflow in chat with per-step rationale, confirm with the user, then write a `workflow.md` artifact — so the workflow is chosen deliberately, not by habit.
 - **[apw-plan](docs/rationale/apw-plan.md)** — Turn a fuzzy brief into durable planning docs at the depth the task warrants, with every task tracing back to what it implements.
 - **[apw-implement](docs/rationale/apw-implement.md)** — Familiarize, ask, agree a mini plan, then implement — surfacing conflicts and naming tradeoffs instead of coding the wrong thing.
 - **[apw-write-test](docs/rationale/apw-write-test.md)** — Derive expected behavior from the spec before reading the code, then trust no test until it's been seen to fail — so the suite catches a broken implementation instead of mirroring it.

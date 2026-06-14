@@ -4,6 +4,10 @@ Each skill in this collection replaces a tempting shortcut with a small, repeata
 
 ## Skills
 
+### [`/apw-decompose`](apw-decompose.md) — Task decomposition
+
+Map a task to the minimal ordered sequence of skills actually needed — by absorbing the brief, assessing what's known and unknown, proposing the workflow in chat with per-step rationale, confirming with the user, then writing a `workflow.md` artifact — so you never jump straight to implementation when the approach is unclear, and never run the full pipeline when a simple implement would do.
+
 ### [`/apw-brainstorm`](apw-brainstorm.md) — Structured ideation
 
 Re-frame the problem, diverge under multiple lenses, push past the safe first cluster, then converge to a ranked shortlist — so brainstorming beats the model's mode collapse instead of surrendering to it.

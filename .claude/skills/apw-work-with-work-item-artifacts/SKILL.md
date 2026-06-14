@@ -1,5 +1,5 @@
 ---
-description: Defines where a work item's artifacts live. Use as the single source of truth for the location of research, brainstorm, requirements, design, plan, root-cause, verification, review, handoff and other "apw-skills" documents.
+description: Defines where a work item's artifacts live. Use as the single source of truth for the location of workflow, research, brainstorm, requirements, design, plan, root-cause, verification, review, handoff and other "apw-skills" documents.
 disable-model-invocation: false
 metadata:
   version: "1.0"
