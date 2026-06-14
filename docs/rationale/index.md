@@ -76,6 +76,10 @@ Carry a straightforward task end to end by orchestrating one subagent per phase 
 
 The verification-free sibling of `/apw-implement-verify-review`, for tasks with nothing concrete to verify against — a trivial change, or one with no spec/plan/reproduction to check against. It orchestrates implement → review in separate contexts so the reviewer never wrote the code, and brings every finding back to you to accept, skip, or diagnose first — dropping the verify phase honestly instead of faking a hollow one.
 
+### [`/apw-find-root-and-fix`](apw-find-root-and-fix.md) — Adaptive diagnose → fix workflow for a known defect
+
+Carries a known defect to a fix while scaling the machinery to the bug. The command familiarizes with the code itself, proposes the likely cause and a fix, then lets you choose the depth — prove the cause with `apw-root-cause-finder`, hand the fix to `apw-implementer`, or just fix it directly with no sub-agent — with every step gated on your approval. A diagnosis sub-agent, when spawned, gets the lead's notes so it doesn't re-search. Use it when something is observably broken and you want the right amount of process for *this* bug, not a fixed pipeline applied to every one.
+
 ---
 
 Part of [AgenticPW](../../README.md) — a practical collection of agentic practices and workflows.

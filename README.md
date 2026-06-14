@@ -24,6 +24,7 @@ Most "awesome agent" repos are grab-bags of prompts and tips that assume the age
 | Commits to the first viable technical approach | Picks the obvious solution without presenting options — user never weighs in on technical direction before implementation begins |
 | Commits to the wrong workflow upfront | Jumps straight to implementation when the approach is unclear, or runs the full research→design→plan stack when a simple implement would do — wasting effort in both directions |
 | Commits to the first plausible cause of a failure | Patches the symptom / commits to the first plausible cause without proving it, so the fix resurfaces or hides an unproven defect |
+| Applies the same heavy process to every bug | Spawns a full diagnose→implement→review pipeline for a one-line fix, or jumps straight to a fix on a defect whose cause was never established — process that's either all overhead or all guesswork, never matched to the bug |
 | No knowledge of your project's rules | Inconsistent commits, broken conventions |
 | No memory across sessions | Repeats past mistakes; lessons learned evaporate when the context window resets |
 
@@ -71,6 +72,17 @@ Where a skill is a single discipline, a **command** composes several of them int
   The verify⇄implement loop runs until verification passes (capped, then escalates to you), the review is run by an agent that didn't write the code, and every review finding comes back to you to **accept the fix, skip it, or send it for root-cause diagnosis first**. Any question a subagent hits is surfaced to you, never guessed. Because each agent wraps a skill that produces a durable artifact, the phases hand off through the work item's files under `docs/work-items/<slug>/`.
 
 - **[apw-implement-review](docs/rationale/apw-implement-review.md)** — The verification-free sibling of the above, for tasks with **nothing concrete to verify against** (a trivial change, or one with no spec/plan/reproduction to check the result against). Same `apw-implementer` and `apw-reviewer` subagents in separate contexts — implement → review, with findings brought back to you to accept, skip, or diagnose first — but no verify phase, so a hollow verification isn't faked just to have one. When the task *does* have a checkable target, use `apw-implement-verify-review` instead.
+
+- **[apw-find-root-and-fix](docs/rationale/apw-find-root-and-fix.md)** — An **adaptive** diagnose → fix workflow for a known defect that scales the machinery to the bug. The command first familiarizes with the code *itself* and proposes the likely cause and a fix, then lets you pick how much help the defect actually warrants — so a trivial bug never pays for a pipeline it doesn't need:
+
+  | Path | What runs | When it fits |
+  |---|---|---|
+  | Diagnose deeper | spawn `apw-root-cause-finder` (`apw-find-root-cause`) | cause uncertain or fix risky |
+  | Hand to the implementer | spawn `apw-implementer` (`apw-implement`) | cause clear, fix non-trivial |
+  | Fix it yourself | the lead implements directly, no sub-agent | defect simple, fix obvious |
+  | Review (opt-in) | spawn `apw-reviewer` (`apw-review`) | you want an adversarial pass |
+
+  Every step is gated on your go-ahead, nothing is changed before you choose the path, and when a diagnosis sub-agent *is* spawned it's handed the lead's familiarization notes so it doesn't re-search. When the root cause is already proven (a `root-cause.md` exists), use `apw-implement-review` instead.
 
 ## Using these skills in other tools (Cursor, GitHub Copilot, etc.)
 
