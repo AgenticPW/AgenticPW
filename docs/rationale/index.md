@@ -56,6 +56,14 @@ Distill a lesson — from the conversation, from user input, or from something y
 
 A reference skill, not a workflow: the single source of truth for where a work item's artifacts live (`docs/work-items/<slug>/`), so the convention is defined once and every other skill points at it instead of restating the path.
 
+## Commands
+
+Commands compose the skills above into a multi-agent workflow. Unlike the skills, they are Claude-Code-specific (a slash command plus subagents).
+
+### [`/apw-implement-verify-review`](apw-implement-verify-review.md) — Full implement → verify → review workflow
+
+Carry a straightforward task end to end by orchestrating one subagent per phase — implement, verify, review — each in its own fresh context. The verify⇄implement loop closes automatically until verification passes, the review is run by an agent that didn't write the code, and every review finding comes back to you to accept, skip, or send for root-cause diagnosis first — so independence between building, proving, and critiquing is preserved instead of collapsing into one self-approving context.
+
 ---
 
 Part of [AgenticPW](../../README.md) — a practical collection of agentic practices and workflows.

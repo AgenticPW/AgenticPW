@@ -51,6 +51,21 @@ The skills live in [`.claude/skills/`](.claude/skills/) and are invoked from Cla
 
 Every skill is self-documenting in its `SKILL.md` file — open it to see each step. To customize behavior, edit that file directly; the change takes effect the next time the skill runs.
 
+## Commands
+
+Where a skill is a single discipline, a **command** composes several of them into one multi-agent workflow. Commands live in [`.claude/commands/`](.claude/commands/) and the subagents they drive live in [`.claude/agents/`](.claude/agents/). Unlike the skills, commands and subagents are **Claude-Code-specific** — they are not part of the cross-tool Agent Skills standard.
+
+- **[apw-implement-verify-review](docs/rationale/apw-implement-verify-review.md)** — Carry a straightforward task all the way to a reviewed, verified result. The command orchestrates one subagent per phase, each in its own fresh context:
+
+  | Phase | Subagent | Wraps skill |
+  |---|---|---|
+  | Implement | `apw-implementer` | `apw-implement` |
+  | Verify | `apw-verifier` | `apw-verify` |
+  | Review | `apw-reviewer` | `apw-review` |
+  | Diagnose (on request) | `apw-root-cause-finder` | `apw-find-root-cause` |
+
+  The verify⇄implement loop runs until verification passes (capped, then escalates to you), the review is run by an agent that didn't write the code, and every review finding comes back to you to **accept the fix, skip it, or send it for root-cause diagnosis first**. Any question a subagent hits is surfaced to you, never guessed. Because each agent wraps a skill that produces a durable artifact, the phases hand off through the work item's files under `docs/work-items/<slug>/`.
+
 ## Using these skills in other tools (Cursor, GitHub Copilot, etc.)
 
 These skills follow the [Agent Skills open standard](https://agentskills.io), which is supported by Cursor, VS Code, GitHub Copilot, OpenAI Codex, Gemini CLI, and others. To make them available in those tools, either rename the `.claude` folder to `.agents`, or symlink the skills directory:
