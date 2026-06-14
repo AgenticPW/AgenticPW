@@ -12,6 +12,10 @@ Re-frame the problem, diverge under multiple lenses, push past the safe first cl
 
 Frame the question, gather referenced evidence, verify it, and record a recommendation — so research is trustworthy and never redone.
 
+### [`/apw-tech-design`](apw-tech-design.md) — Technical design
+
+Familiarize, ask if needed, present up to 3 technical options with pros/cons and a recommendation, confirm with the user, then write a compact `tech-design.md` artifact — so the technical direction is agreed and documented before planning or implementation begins.
+
 ### [`/apw-plan`](apw-plan.md) — Structured planning
 
 Absorb the inputs, state your understanding, then produce planning docs at the depth the task warrants — FULL (requirements + design + plan), MEDIUM (design + plan), or PLAN — with every task tracing back to what it implements, so the plan survives the conversation and doesn't drift from intent.
@@ -63,6 +67,10 @@ Commands compose the skills above into a multi-agent workflow. Unlike the skills
 ### [`/apw-implement-verify-review`](apw-implement-verify-review.md) — Full implement → verify → review workflow
 
 Carry a straightforward task end to end by orchestrating one subagent per phase — implement, verify, review — each in its own fresh context. The verify⇄implement loop closes automatically until verification passes, the review is run by an agent that didn't write the code, and every review finding comes back to you to accept, skip, or send for root-cause diagnosis first — so independence between building, proving, and critiquing is preserved instead of collapsing into one self-approving context.
+
+### [`/apw-implement-review`](apw-implement-review.md) — Implement → review workflow (no verify)
+
+The verification-free sibling of `/apw-implement-verify-review`, for tasks with nothing concrete to verify against — a trivial change, or one with no spec/plan/reproduction to check against. It orchestrates implement → review in separate contexts so the reviewer never wrote the code, and brings every finding back to you to accept, skip, or diagnose first — dropping the verify phase honestly instead of faking a hollow one.
 
 ---
 

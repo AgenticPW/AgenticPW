@@ -21,6 +21,7 @@ Most "awesome agent" repos are grab-bags of prompts and tips that assume the age
 | Declares success on unverified work | Reports "done" from code that *looks* right, never proven |
 | Bias toward its own output | Reviews its own work to confirm it, not to break it — and approves the flaw it just authored |
 | Mode collapse toward the average answer | "Brainstorming" yields a few generic, near-identical ideas |
+| Commits to the first viable technical approach | Picks the obvious solution without presenting options — user never weighs in on technical direction before implementation begins |
 | Commits to the first plausible cause of a failure | Patches the symptom / commits to the first plausible cause without proving it, so the fix resurfaces or hides an unproven defect |
 | No knowledge of your project's rules | Inconsistent commits, broken conventions |
 | No memory across sessions | Repeats past mistakes; lessons learned evaporate when the context window resets |
@@ -40,6 +41,7 @@ The skills live in [`.claude/skills/`](.claude/skills/) and are invoked from Cla
 - **[apw-verify](docs/rationale/apw-verify.md)** — Turn requirements into a checklist and verify each item against reality with evidence, so "done" is proven, not assumed.
 - **[apw-review](docs/rationale/apw-review.md)** — Switch from author to critic and attack your own diff, plan, or conclusion under explicit lenses, so the flaw you're too close to see gets caught before it ships.
 - **[apw-brainstorm](docs/rationale/apw-brainstorm.md)** — Re-frame the problem, diverge under multiple lenses, push past the safe first cluster, then converge to a ranked shortlist.
+- **[apw-tech-design](docs/rationale/apw-tech-design.md)** — Present up to 3 technical options with pros/cons and a recommendation, confirm with the user, then write a compact design artifact — so the technical direction is agreed before planning or implementation begins.
 - **[apw-find-root-cause](docs/rationale/apw-find-root-cause.md)** — Capture the symptom, reproduce it, hold competing hypotheses, then prove the causal chain to the underlying defect before any fix.
 - **[apw-commit](docs/rationale/apw-commit.md)** — Draft a commit message from the diff against a project schema and show what will be staged before anything happens.
 - **[apw-onboard](docs/rationale/apw-onboard.md)** — Survey the codebase once into an `AGENTS.md` orientation section — architecture, entry points, build/test/run, conventions — and orient from it later by verifying it against reality first, so sessions stop re-deriving the codebase and a stale map gets caught, not believed.
@@ -65,6 +67,8 @@ Where a skill is a single discipline, a **command** composes several of them int
   | Diagnose (on request) | `apw-root-cause-finder` | `apw-find-root-cause` |
 
   The verify⇄implement loop runs until verification passes (capped, then escalates to you), the review is run by an agent that didn't write the code, and every review finding comes back to you to **accept the fix, skip it, or send it for root-cause diagnosis first**. Any question a subagent hits is surfaced to you, never guessed. Because each agent wraps a skill that produces a durable artifact, the phases hand off through the work item's files under `docs/work-items/<slug>/`.
+
+- **[apw-implement-review](docs/rationale/apw-implement-review.md)** — The verification-free sibling of the above, for tasks with **nothing concrete to verify against** (a trivial change, or one with no spec/plan/reproduction to check the result against). Same `apw-implementer` and `apw-reviewer` subagents in separate contexts — implement → review, with findings brought back to you to accept, skip, or diagnose first — but no verify phase, so a hollow verification isn't faked just to have one. When the task *does* have a checkable target, use `apw-implement-verify-review` instead.
 
 ## Using these skills in other tools (Cursor, GitHub Copilot, etc.)
 
