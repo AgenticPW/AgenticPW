@@ -43,6 +43,8 @@ Proceed with the implementation as agreed. Use the TodoWrite tool (if available)
 
 If you are working from an `apw-plan` `plan.md`, tick each `- [ ]` box to `- [x]` as you complete that task, so the plan stays a live record of what's done and what's left.
 
+**Code comments:** Do not leave any comments in the code unless the project's `AGENTS.md`, `CLAUDE.md`, or a similar project-level instruction file explicitly requires them. This applies to inline comments, block comments, and docstrings alike. If no such rule exists, write no comments.
+
 ## Step 5 — Surface conflicts during implementation
 
 If you discover something during implementation that contradicts the plan — an unexpected API shape, a constraint in the codebase, a missing dependency, a design conflict — stop and describe the issue to the user. Do not silently work around it or make a unilateral decision that changes the plan. Resume only after the user decides how to handle it.
