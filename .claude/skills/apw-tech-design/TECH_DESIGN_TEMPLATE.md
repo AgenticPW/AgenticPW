@@ -58,11 +58,16 @@ from the brief and any prior artifacts.
 <The single most important reason for this choice, and any secondary reasons
 that reinforced it. If an option was close, say so and explain the tiebreaker.>
 
-## Gaps and open questions
+## Risks
 
-Things that could not be determined from the available information, assumptions
-that must be validated before implementation, or risks the implementer must
-carry.
+Risks the implementer must carry.
+
+- ...
+
+## Open questions
+
+Things that could not be determined from the available information, or
+assumptions that must be validated before implementation.
 
 - ...
 ````

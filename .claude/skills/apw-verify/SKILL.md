@@ -7,6 +7,10 @@ metadata:
 
 Use this skill when asked to verify that an implementation is actually done — that it meets a description, spec, plan, or set of requirements. It exists to fight one specific failure: a model tends to **declare success on unverified work**, reasoning that code *looks* correct instead of checking that it *is*. This skill replaces "it should work" with evidence: derive concrete requirements, check each against reality, grade it honestly, and record the result in a durable artifact. It sits **downstream** of implementation — it is how you prove the work before claiming it. Follow the steps below strictly and in order.
 
+## Output style
+
+When this skill asks for a plan, report, summary, status update, or other chat-facing output, prefer bullet points or numbered lists over plain paragraphs. Keep each item concise and content-bearing. Omit language that only smooths tone, repeats context, or adds "language sugar" without changing the meaning.
+
 ## Step 1 — Establish the verification target
 
 Before checking anything, pin down exactly what you are verifying against:
@@ -61,7 +65,8 @@ Write the outcome to your work item's **`verification-result.md`** artifact — 
 - **Failures and gaps** — what does not meet the requirements.
 - **Open questions** — anything unresolved or needing a decision.
 - **Not verified** — anything you were unable to check, and why.
-- **Anything else worth flagging** — surprises, risks, or follow-up the next person should know about.
+- **Risks** — risks found outside the checklist, or risks created by anything not verified.
+- **Notes** — surprises or follow-up the next person should know about.
 
 This file is the record of what was and was not proven. Write it even when everything passes.
 

@@ -74,6 +74,10 @@ The ranked shortlist or single recommendation, with reasoning. For each, say
 what it needs next: research (`apw-research`), a prototype, or implementation
 (`apw-implement`).
 
+## Risks
+
+- Risks or downsides the next step should carry forward.
+
 ## Open questions
 
 - Assumptions that still need confirming.

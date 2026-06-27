@@ -15,6 +15,10 @@ This skill is **user-invoked only** — the agent must never reach for it on its
 
 The skill has two modes — **build** (survey and write/refresh the orientation) and **orient** (read it and verify against reality before trusting it). Determine the mode first, then follow that mode's steps strictly and in order.
 
+## Output style
+
+When this skill asks for a plan, report, summary, status update, or other chat-facing output, prefer bullet points or numbered lists over plain paragraphs. Keep each item concise and content-bearing. Omit language that only smooths tone, repeats context, or adds "language sugar" without changing the meaning.
+
 ## Step 1 — Determine the mode
 
 - **Build** — create the orientation for a project that has none, or refresh one that has drifted. The deliverable is an up-to-date Codebase Orientation section in `AGENTS.md`.

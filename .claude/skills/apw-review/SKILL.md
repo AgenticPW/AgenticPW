@@ -7,6 +7,10 @@ metadata:
 
 Use this skill to critically review your own work — a diff, a plan, or a conclusion — *before* presenting it as final. It exists to fight one specific failure: a model is **biased toward its own output**, so once it has produced something it tends to defend and rationalize it rather than attack it, and a quick "looks good to me" ships the flaw it just authored. This skill forces the opposite posture: drop the author's defense, assume the work is flawed, and hunt for *how*. It reviews the **reasoning** — the assumptions, the missed alternatives, the weak logic, the unconsidered case — which is a different job from proving the work runs (`apw-verify`) or building it (`apw-implement`). It sits **downstream** of producing something and **upstream** of presenting it. Follow the steps below strictly and in order.
 
+## Output style
+
+When this skill asks for a plan, report, summary, status update, or other chat-facing output, prefer bullet points or numbered lists over plain paragraphs. Keep each item concise and content-bearing. Omit language that only smooths tone, repeats context, or adds "language sugar" without changing the meaning.
+
 ## Step 1 — Establish the review target
 
 Before critiquing anything, pin down exactly what is under review:

@@ -7,6 +7,10 @@ metadata:
 
 Use this skill when a task needs to be turned into a plan *before* anyone starts building it. It is the upstream companion to `apw-implement` and the downstream consumer of `apw-research` / `apw-brainstorm`: it takes a fuzzy brief (plus any docs or prior artifacts) and produces durable planning documents an implementation can execute against. It exists to fight two failures: jumping into code with the whole plan held only in volatile context — so steps get skipped and the work drifts from the original ask — and producing a plan that loses the thread of the requirements it was supposed to satisfy. Follow the steps below strictly and in order.
 
+## Output style
+
+When this skill asks for a plan, report, summary, status update, or other chat-facing output, prefer bullet points or numbered lists over plain paragraphs. Keep each item concise and content-bearing. Omit language that only smooths tone, repeats context, or adds "language sugar" without changing the meaning.
+
 ## Step 1 — Absorb the inputs
 
 Before forming any plan, read everything that defines the task:

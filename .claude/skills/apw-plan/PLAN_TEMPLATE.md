@@ -44,7 +44,11 @@ observe. Hands off to `/apw-verify`.
 
 - ...
 
-## Risks & open questions
+## Risks
+
+- ...
+
+## Open questions
 
 - ...
 ```

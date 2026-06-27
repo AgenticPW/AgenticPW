@@ -9,6 +9,10 @@ Use this skill to carry **in-flight task state** across a context reset. It exis
 
 The skill has two modes — **checkpoint** (save state on the way out) and **resume** (restore state on the way in). Determine the mode first, then follow that mode's steps strictly and in order.
 
+## Output style
+
+When this skill asks for a plan, report, summary, status update, or other chat-facing output, prefer bullet points or numbered lists over plain paragraphs. Keep each item concise and content-bearing. Omit language that only smooths tone, repeats context, or adds "language sugar" without changing the meaning.
+
 ## Step 1 — Determine the mode
 
 - **Checkpoint** — a session is ending mid-task: the user is stopping for now, context is close to compaction, or you are partway through work that another session will finish. The deliverable is an up-to-date `handoff.md`.
@@ -26,6 +30,7 @@ Collect, from the conversation and the working tree, everything a fresh session 
 - **State of play** — what is **done** (and verified or not), what is **in flight** (started but unfinished, including half-edited files), and what is **next** (the concrete next action, not a vague direction).
 - **Decisions made** — each settled decision *with its why*. A decision recorded without its reason will be re-litigated.
 - **Dead ends** — approaches already tried and abandoned, and why they failed. This is the most expensive knowledge to lose, because a fresh session will reach for the same plausible ideas.
+- **Risks** — anything the next session should carry forward.
 - **Open questions** — anything unresolved, especially questions waiting on the user.
 - **Pointers** — the specific files and line ranges in play, relevant commands, and the sibling artifacts (`plan.md`, `root-cause.md`, …) that hold the task's durable context.
 

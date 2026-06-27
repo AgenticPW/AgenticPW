@@ -7,6 +7,10 @@ metadata:
 
 Use this skill when a task has been handed in but the right *sequence of skills* to apply is not yet decided. It sits before every other skill in the workflow: it maps the task to the minimal set of steps that will actually be needed, so later phases do not waste effort or skip work that matters. Follow the steps below strictly and in order.
 
+## Output style
+
+When this skill asks for a plan, report, summary, status update, or other chat-facing output, prefer bullet points or numbered lists over plain paragraphs. Keep each item concise and content-bearing. Omit language that only smooths tone, repeats context, or adds "language sugar" without changing the meaning.
+
 ## Step 1 — Absorb the task
 
 Before assessing anything, read everything that defines the task:

@@ -7,6 +7,10 @@ metadata:
 
 This skill is the single source of truth for **where a work item's artifacts live**. Other skills name the artifact they produce (its filename) and point here for the location; they do not restate the path.
 
+## Output style
+
+When this skill asks for a plan, report, summary, status update, or other chat-facing output, prefer bullet points or numbered lists over plain paragraphs. Keep each item concise and content-bearing. Omit language that only smooths tone, repeats context, or adds "language sugar" without changing the meaning.
+
 ## Where artifacts live
 
 A work item's artifacts live together under **`docs/work-items/<slug>/`** in the project root.

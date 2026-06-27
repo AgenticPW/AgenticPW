@@ -54,11 +54,14 @@ Compare candidates against the done-criteria. Be honest about the downsides.
 The concrete recommendation and the reasoning behind it. Name the confidence
 level. If this feeds an implementation, say what to build first.
 
-## Open questions & risks
+## Risks
+
+- Risks the implementation must carry forward.
+
+## Open questions
 
 - What could not be determined, and why.
 - Assumptions that still need confirming.
-- Risks the implementation must carry forward.
 
 ## References
 

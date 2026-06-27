@@ -9,6 +9,10 @@ Use this skill when the deliverable is *new test code* — whether you are writi
 
 The antidote is structural: derive the expected behavior from the *requirement* before reasoning from the code, and trust no test until it has been *seen to fail*. That same spine works in both modes — in post-hoc mode it makes you behave as if the tests came first. This is a different job from deciding *what work to do* (`apw-plan`), proving a *finished* implementation meets its requirements (`apw-verify`, which consumes tests rather than authoring them), or general adversarial review (`apw-review`, of which Step 6 here is a narrow, test-only echo). Follow the steps below strictly and in order.
 
+## Output style
+
+When this skill asks for a plan, report, summary, status update, or other chat-facing output, prefer bullet points or numbered lists over plain paragraphs. Keep each item concise and content-bearing. Omit language that only smooths tone, repeats context, or adds "language sugar" without changing the meaning.
+
 ## Step 1 — Establish the behavior under test
 
 Before writing anything, pin down what you are testing and against what:

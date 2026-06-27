@@ -68,10 +68,22 @@ fix targets the root, not the symptom. **Do not design the fix here.**
 
 - ...
 
-## Open questions & notes
+## Risks
 
-Anything unresolved, surprises worth flagging (misreported symptom, external
-cause, multiple independent root causes), or risks the fix should carry forward.
+Risks the fix should carry forward.
+
+- ...
+
+## Open questions
+
+Anything unresolved that needs a decision or more evidence.
+
+- ...
+
+## Notes
+
+Surprises worth flagging, such as a misreported symptom, external cause, or
+multiple independent root causes.
 
 - ...
 ```

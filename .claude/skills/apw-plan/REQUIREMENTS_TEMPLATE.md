@@ -46,6 +46,12 @@ anyone can tell the requirements are met.
 
 - ...
 
+## Risks
+
+Risks that affect the requirements or acceptance criteria.
+
+- ...
+
 ## Open questions
 
 Anything unresolved that affects what is required.

@@ -9,6 +9,10 @@ Use this skill when something is observably broken — a defect, a failure, a wr
 
 This skill is **diagnostic-only**. It ends at a proven (or best-supported) root cause and explicitly does **not** design or apply the fix — that is handed off to `apw-implement` (optionally via `apw-plan`). It is distinct from `apw-research`: research is open-ended investigation of an unknown space, while this skill diagnoses a *known, observed* defect. It sits **upstream** of the fix — it is how you prove what is wrong before anyone changes code. Follow the steps below strictly and in order.
 
+## Output style
+
+When this skill asks for a plan, report, summary, status update, or other chat-facing output, prefer bullet points or numbered lists over plain paragraphs. Keep each item concise and content-bearing. Omit language that only smooths tone, repeats context, or adds "language sugar" without changing the meaning.
+
 ## Step 1 — Capture the symptom
 
 Before forming any theory, pin down exactly what is broken — and separate the symptom from its cause:
@@ -85,6 +89,8 @@ Write the diagnosis to your work item's **`root-cause.md`** artifact — see `ap
 - The **proven root cause and its causal chain**, with the supporting evidence.
 - The **confidence level** — and, if not fully proven, exactly what would confirm it.
 - A **"what the fix must address"** hand-off section — naming the defect for the fix to target, *without designing the fix*.
+- **Risks** — risks the fix should carry forward.
+- **Open questions** — anything unresolved that needs a decision or more evidence.
 
 This is the structured input `apw-implement` / `apw-plan` consumes. Write it even when the cause was obvious.
 

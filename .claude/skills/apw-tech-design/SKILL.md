@@ -7,6 +7,10 @@ metadata:
 
 Use this skill when a task needs a *technical solution design* before anyone starts building it. It sits between open-ended ideation (`apw-brainstorm`) and full planning (`apw-plan`): it takes a task description, explores the codebase and constraints, then converges to a concrete technical recommendation the user can confirm before any detailed planning or code begins. Follow the steps below strictly and in order.
 
+## Output style
+
+When this skill asks for a plan, report, summary, status update, or other chat-facing output, prefer bullet points or numbered lists over plain paragraphs. Keep each item concise and content-bearing. Omit language that only smooths tone, repeats context, or adds "language sugar" without changing the meaning.
+
 ## Step 1 — Familiarize
 
 Before forming any opinion, read everything relevant to the task:
@@ -48,7 +52,8 @@ Once the user confirms, write the result to your work item's **`tech-design.md`*
 Then output a concise summary covering:
 
 - The **recommended option** and the core rationale.
-- **Gaps** — anything important that could not be determined: missing context, unknowns that remain, assumptions that must be validated before implementation.
+- **Risks** — risks the implementer must carry.
+- **Open questions** — missing context, unknowns that remain, or assumptions that must be validated before implementation.
 - The **path to the artifact**.
 
 Be honest. If something is missing or uncertain, say so here rather than burying it in the doc.

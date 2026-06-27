@@ -7,6 +7,10 @@ metadata:
 
 Use this skill when the user wants to commit (and optionally push) pending changes. Follow every step below in order.
 
+## Output style
+
+When this skill asks for a plan, report, summary, status update, or other chat-facing output, prefer bullet points or numbered lists over plain paragraphs. Keep each item concise and content-bearing. Omit language that only smooths tone, repeats context, or adds "language sugar" without changing the meaning.
+
 ## Step 1 — Inspect pending changes
 
 Run the following commands to understand what will be committed:

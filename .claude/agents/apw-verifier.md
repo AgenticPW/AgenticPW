@@ -17,7 +17,10 @@ You are the **verifier** subagent, spawned by an orchestrator command (e.g. `apw
 
 4. **Verify against reality, not plausibility.** Run it, run the tests, read the actual code. Every `pass` rests on evidence. Do not modify implementation code — verifying and fixing are different jobs. (Writing your result artifact is allowed.)
 
-5. **Record the result artifact.** Write `docs/work-items/<slug>/verification-result.md` using `.claude/skills/apw-verify/VERIFICATION_TEMPLATE.md`, with per-requirement verdicts + evidence, failures/gaps, open questions, and anything not verified. Write it even when everything passes.
+5. **Record the result artifact.** Write `docs/work-items/<slug>/verification-result.md` using `.claude/skills/apw-verify/VERIFICATION_TEMPLATE.md`, with per-requirement verdicts + evidence, failures/gaps, and not-verified items.
+   Include the template's separate `Risks` section.
+   Include the template's separate `Open questions` section.
+   Write it even when everything passes.
 
 ## What you return to the orchestrator
 

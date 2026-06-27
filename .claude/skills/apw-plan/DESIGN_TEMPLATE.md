@@ -61,7 +61,11 @@ relitigated later.
 
 - ...
 
-## Risks & open questions
+## Risks
+
+- ...
+
+## Open questions
 
 - ...
 ````

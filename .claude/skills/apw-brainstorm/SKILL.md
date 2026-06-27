@@ -7,6 +7,10 @@ metadata:
 
 Use this skill when asked to brainstorm, ideate, generate options, or explore approaches *before* committing to one. It exists to fight one specific failure: a model defaults to its single highest-probability answer, so an unaided "give me ideas" produces a few near-identical, generic options, anchored to the first framing and presented uncritically. This skill forces genuine divergence, defers judgment, then converges honestly. It sits **upstream** of `apw-research` (verify the chosen direction) and `apw-implement` (build it). Follow the steps below strictly and in order.
 
+## Output style
+
+When this skill asks for a plan, report, summary, status update, or other chat-facing output, prefer bullet points or numbered lists over plain paragraphs. Keep each item concise and content-bearing. Omit language that only smooths tone, repeats context, or adds "language sugar" without changing the meaning.
+
 ## Step 1 — Frame and re-frame the challenge
 
 Before generating a single idea, write down what the ideation is actually for:
@@ -70,7 +74,10 @@ If the ideation reveals that the real problem is different from the framing — 
 2. Say what each shortlisted idea would need *next* — typically a hand-off to `apw-research` to verify feasibility, or straight to `apw-implement` if the path is clear.
 3. Write the result to your work item's **`brainstorm.md`** artifact — see `apw-work-with-work-item-artifacts` for where work-item artifacts live — using `.claude/skills/apw-brainstorm/BRAINSTORM_TEMPLATE.md` as the structure. Capturing the idea log (not just the winner) means the discarded options can be revisited instead of regenerated.
 
-This artifact is the **single detailed record** — the full idea log, clusters, matrix, shortlist, and open questions live here. The chat (Step 8) gets a concise summary that points to it, never a second copy of the same content.
+This artifact is the **single detailed record** — the full idea log, clusters, matrix, and shortlist live here.
+Risks live in the separate `Risks` section.
+Unresolved questions live in the separate `Open questions` section.
+The chat (Step 8) gets a concise summary that points to it, never a second copy of the same content.
 
 ## Step 8 — Concise summary
 
@@ -78,6 +85,8 @@ The detail is already in the artifact, so keep the chat result short — its job
 
 - The **top recommendation** (or the 2–3 leading shortlist items) in a line or two each.
 - A one-line note that weaker ideas were considered and cut, and whether any **assumed** constraint fell.
-- The **path to the artifact**, where the full idea log, matrix, and open questions live.
+- The **path to the artifact**.
+- A note that the artifact contains a separate `Risks` section.
+- A note that the artifact contains a separate `Open questions` section.
 
 Do not paste the idea log, the clustering, or the evaluation matrix into chat — that is the duplication this step exists to avoid. Stay honest: if the real options are narrow, say so in the one line rather than padding the summary to look richer than the doc.

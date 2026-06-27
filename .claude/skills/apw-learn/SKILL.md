@@ -7,6 +7,10 @@ metadata:
 
 Use this skill to turn a lesson into a durable project rule. It exists to fight one specific limitation: a model has **no memory across sessions** — conventions discovered, mistakes corrected, and preferences stated all evaporate when the context window resets, so the same ground gets re-learned and the same mistakes repeat. The fix is to write the lesson into the project's always-on instructions (`AGENTS.md`), which every future session reads. This skill is a **cross-cutting reflex**, not a chain stage: run it after any task, when the user hands you a rule, or when you yourself notice something worth keeping. The one non-negotiable rule: **never edit `AGENTS.md` without explicit user confirmation.** Follow the steps below in order.
 
+## Output style
+
+When this skill asks for a plan, report, summary, status update, or other chat-facing output, prefer bullet points or numbered lists over plain paragraphs. Keep each item concise and content-bearing. Omit language that only smooths tone, repeats context, or adds "language sugar" without changing the meaning.
+
 ## Step 1 — Determine the mode
 
 Figure out which of three entry paths you are in, because the source of the candidate lessons differs:

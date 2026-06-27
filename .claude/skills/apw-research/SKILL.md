@@ -7,6 +7,10 @@ metadata:
 
 Use this skill when asked to research, investigate, evaluate options, or understand a problem space *before* committing to an implementation. It is the upstream companion to `apw-implement`: research produces a durable artifact that an implementation can then build on. Follow the steps below strictly and in order.
 
+## Output style
+
+When this skill asks for a plan, report, summary, status update, or other chat-facing output, prefer bullet points or numbered lists over plain paragraphs. Keep each item concise and content-bearing. Omit language that only smooths tone, repeats context, or adds "language sugar" without changing the meaning.
+
 ## Step 1 — Frame the question
 
 Before consulting any source, write down what the research must actually answer:
@@ -79,7 +83,8 @@ When done, report:
 - The recommendation and its overall confidence level.
 - What is **verified** vs what remains an **assumption**.
 - What could not be determined, and why.
-- Open questions and risks the implementation (or a follow-up research pass) must carry.
+- Risks the implementation (or a follow-up research pass) must carry.
+- Open questions the implementation (or a follow-up research pass) must carry.
 - The path to the written artifact.
 
 Be honest. Do not present a confident answer where the evidence is thin.

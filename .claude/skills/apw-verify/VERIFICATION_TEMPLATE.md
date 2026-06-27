@@ -53,10 +53,16 @@ than hidden behind silence.
 
 - ...
 
+## Risks
+
+Risks found outside the checklist, or risks created by anything not verified.
+
+- ...
+
 ## Notes
 
-Anything else worth flagging: surprises, risks found outside the checklist, or
-follow-up the next person should know about.
+Anything else worth flagging: surprises or follow-up the next person should know
+about.
 
 - ...
 ```

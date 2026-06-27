@@ -58,6 +58,12 @@ session doesn't reach for the same plausible ideas.
 |-------|---------------|
 | ... | ... |
 
+## Risks
+
+Risks the next session should carry forward.
+
+- ...
+
 ## Open questions
 
 Anything unresolved — especially questions waiting on the user.
